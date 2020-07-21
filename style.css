@@ -1,0 +1,120 @@
+body{
+
+    background-color: rgb(128, 83, 0);
+}
+
+.tittle {
+    color: #111;
+    font-weight: 800;
+}
+h1 {
+    font-weight: 50;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+.main2 {
+    text-align: center;
+}
+#task-input {
+    padding: 10px 15px;
+    width: 300px;
+    font-size: 18px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    height: 25px;
+    margin: 10px;
+}
+.fa {
+    height: 50px ;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+.add {
+    background-color: lime;
+}
+.remove-all {
+    background-color: red;
+}
+.remove-all:hover {
+    background-color: rgba(255 , 0, 0 , 0.8);
+    transition: 0.5s;
+}
+.add:hover {
+    background-color: rgba(0 , 255 , 0 , 0.8);
+    transition: 0.5s;
+}
+.list-items {
+    color: white;
+    font-size: 20px;
+    padding: 0.5rem;
+	border-bottom: 4px solid #fff;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+.list-items span {
+    flex: 1;
+}
+.remove , .edit {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    /* color: #E00 ; */
+}
+.edit {
+    margin: 0 0.5rem;
+    color: lawngreen;
+    margin-left: 15rem;
+}
+.remove {
+    color: rgb(255, 0, 0);
+}
+.main3 {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    margin: 2rem;
+    /* overflow: scroll; */
+}
+.item-input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.4rem;
+	width: 245px;
+}
+@media(max-width : 780px){
+    .main3{
+        width: 80%;
+    }
+    .remove , .edit {
+        outline: none;
+        border: none;
+        background: none;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .list-items {
+        font-size: 17px;
+        border-bottom: 3px solid #fff;
+
+    }
+    .item-input{
+        background: none;
+        outline: none;
+        border: none;
+        /* color: #fff; */
+        font-size: 1.2rem;
+        /* width: 245px; */
+    }
+}
