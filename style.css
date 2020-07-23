@@ -107,7 +107,8 @@ h1 {
     .list-items {
         font-size: 17px;
         border-bottom: 3px solid #fff;
-
+        padding: 0.5rem;
+        margin-bottom: 1.5rem;
     }
     .item-input{
         background: none;
@@ -116,5 +117,10 @@ h1 {
         /* color: #fff; */
         font-size: 1.2rem;
         /* width: 245px; */
+    }
+    .edit {
+        margin: 0 0.5rem;
+        color: lawngreen;
+        margin-left: 12rem;
     }
 }
