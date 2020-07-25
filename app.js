@@ -41,6 +41,7 @@ function edit(e){
        var edit = e.parentElement.firstChild
        var editInput = document.createElement("input")
        editInput.setAttribute("class" , "item-input")
+
        var val = edit.innerHTML
        edit.innerHTML = ""
        edit.appendChild(editInput)
@@ -48,11 +49,16 @@ function edit(e){
        e.innerHTML = "Update"
        condition = "update"
     }else if (e.innerHTML == "Update" & condition == "update"){
+        
         var edit = e.parentElement.firstChild
         var val = edit.firstChild.value
+        if(val == ""){
+            alert("Enter What Do You Want to Do...")
+        }else{
         edit.innerHTML = val
         e.innerHTML = "Edit"
         condition = "edit"
+        }
      }
   
 }
