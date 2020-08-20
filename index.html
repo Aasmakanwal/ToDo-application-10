@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCA_Qy-341n29X25tywr2kESfVWm1TaJKc",
+          authDomain: "a-k-todo-app-10.firebaseapp.com",
+          databaseURL: "https://a-k-todo-app-10.firebaseio.com",
+          projectId: "a-k-todo-app-10",
+          storageBucket: "a-k-todo-app-10.appspot.com",
+          messagingSenderId: "950431211126",
+          appId: "1:950431211126:web:091afde3171faa80c34957",
+          measurementId: "G-T44KXZ7ZVV"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // firebase.analytics();
+      </script>
+      
 </head>
+
 <body>
     <div class="main">
-    <h1><span class="tittle">TODO</span>List</h1>
-  <div class="main2">
-      <input type="text" id="task-input" autofocus placeholder="What Do You Want to Do...">
-      <button class="fa fa-plus add" onclick="addEvents()"></button>
-      <button class="fa fa-remove remove-all" onclick="removeAll()"></button>
-  </div>
-  <div class="main3"> 
-      <ul id="list">
-      </ul>
-  </div>
-</div>
+        <h1><span class="tittle">TODO</span>List</h1>
+        <div class="main2">
+            <input type="text" id="task-input" autofocus placeholder="What Do You Want to Do...">
+            <button class="fa fa-plus add" onclick="addEvents()"></button>
+            <button class="fa fa-remove remove-all" onclick="removeAll()"></button>
+        </div>
+        <div class="main3">
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
 
     <script src="app.js"></script>
+
+
 </body>
+
 </html>
